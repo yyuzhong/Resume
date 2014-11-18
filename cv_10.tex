@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Yuzhong}{ Yan}{Junior Software Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+5606 Bissonnet Apt 6
+Houston, Texas 77081
+USA
+~
++1 (832) 512 2357
+~
+\href{mailto:yyuzhong@gmail.com}{yyuzhong@gmail.com}
+\href{http://github.com/yyuzhong}{http://github.com/yyuzhong}
+\section{languages}
+Chinese mother tongue
+English fluency
+\section{programming}
+{\color{red} $\varheartsuit$} C/C++
+Java, Scala, PHP
+\section{Qualifications}
+{\color{red} $\varheartsuit$} Embedded System
+Consumer Electronics
+Hadoop/Spark
+Project Management
+Customer Support
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013--2015}
+{Masters {\normalfont of Computer Science}}
+{Prairie View AM University, TX}
+{ \emph{Processing Seismic Data with Spark Hadoop Platform} \\ This thesis explored the solution that processing big seismic data on Hadoop Spark platform}
+%------------------------------------------------
+\entry
+{2000--2003}
+{Master {\normalfont of Computer Science}}
+{Southwest Jiaotong University, Sichuan}
+{Specialization in programming optimization in parallel and embedded system design}
+%------------------------------------------------
+\entry
+{1996--2000}
+{Bachelor {\normalfont of Applied Mathmetics}}
+{Hebei University, Hebei}
+{Specialization in software and algorithm}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013--Now}
+{Prairie View University}
+{Prairie View, Texas}
+{\emph{Research Assitant} \\
+Research direction is focus on Cloud Computing. Using Apache Hadoop/Spark and OpenCV to implement image processing and seismic data analytics cloud platform. The core developer of project supported National Science Foundation CRI program award \#1205699 \\
+%Detailed achievements:
+%\begin{itemize}
+%\item Setup two clusters with 256 and 288 Cores
+%\item Setup Hadoop and Spark computing framework
+%\item Run image processing and seismic data algorithms on Map/Reduce Platform
+%\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2011--2013}
+{Geeya Technology}
+{Chengdu, China}
+{\emph{CTO} \\
+Leader of RD center, focus on Set Top Box and Smart IP Box product development.
+The main jobs are human resource and project management, setting up new production direction and communication with main customers (network operators).
+}
+%------------------------------------------------
+\entry
+{2003-2011}
+{Sunplus Technology}
+{Chengdu, China}
+{\emph{Software Engineer/Department Manager} \\
+Focus on BSP and Middleware and Application development on CE at beginning. Then be responsible for the development of consumer electronics products, projects and routine management of the whole department, including the research and development of Digital Still Camera, Digital Photo Frame and the Web Camera products, project planning and process management, quality assurance and customer support etc.
+}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{awards}
+%\begin{entrylist}
+%------------------------------------------------
+%\entry
+%{2011}
+%{Hornor Student}
+%{Department of Computer Science, Prairie View AM University}
+%{Awarded to the top student in their final year of a Master degree.}
+%------------------------------------------------
+%\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} software design, data analysis, mathematics, fancier of consumer electronics 
+\\\textbf{personal:} photograph, basketball, hiking, movie
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+Yuzhong Yan, Lei Huang, \textbf{"Large-scale Image Processing Research Cloud"}, In Proc. of Fifth International Conference on Cloud Computing, GRIDs, and Virtualization (Cloud Computing 2014), May 25 - 29, 2014, Venice, Italy
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
